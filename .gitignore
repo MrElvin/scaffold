@@ -1,4 +1,14 @@
 .DS_Store
+.idea
+.vscode
+
+## dev
+node_modules
+package-lock.json
+
+# build
 dist
-node_modules/
-coverage/
+public
+
+# test
+coverage

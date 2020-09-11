@@ -3,6 +3,9 @@
     "version": "1.0.0",
     "description": "My Scaffold",
     "main": "index.js",
+    "keywords": [
+        "scaffold"
+    ],
     "scripts": {
         "commit": "git-cz"
     },
@@ -18,8 +21,14 @@
     "devDependencies": {
         "@commitlint/cli": "^9.1.2",
         "@commitlint/config-conventional": "^9.1.2",
+        "@typescript-eslint/eslint-plugin": "^4.1.0",
+        "@typescript-eslint/parser": "^4.1.0",
         "commitizen": "^4.2.1",
-        "husky": "^4.3.0"
+        "eslint": "^7.8.1",
+        "eslint-config-airbnb-base": "^14.2.0",
+        "eslint-plugin-import": "^2.22.0",
+        "husky": "^4.3.0",
+        "prettier": "^2.1.1"
     },
     "husky": {
         "hooks": {
