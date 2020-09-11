@@ -1,11 +1,34 @@
 {
-  "name": "scaffold",
-  "version": "1.0.0",
-  "description": "My Scaffold",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "Boyobo",
-  "license": "ISC"
+    "name": "scaffold",
+    "version": "1.0.0",
+    "description": "My Scaffold",
+    "main": "index.js",
+    "scripts": {
+        "commit": "git-cz"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git@github.com:MrElvin/scaffold.git"
+    },
+    "author": "Boyobo",
+    "license": "ISC",
+    "dependencies": {
+        "typescript": "^4.0.2"
+    },
+    "devDependencies": {
+        "@commitlint/cli": "^9.1.2",
+        "@commitlint/config-conventional": "^9.1.2",
+        "commitizen": "^4.2.1",
+        "husky": "^4.3.0"
+    },
+    "husky": {
+        "hooks": {
+            "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+        }
+    },
+    "config": {
+        "commitizen": {
+            "path": "cz-conventional-changelog"
+        }
+    }
 }
