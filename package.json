@@ -26,13 +26,32 @@
         "commitizen": "^4.2.1",
         "eslint": "^7.8.1",
         "eslint-config-airbnb-base": "^14.2.0",
+        "eslint-config-prettier": "^6.11.0",
         "eslint-plugin-import": "^2.22.0",
         "husky": "^4.3.0",
-        "prettier": "^2.1.1"
+        "lint-staged": "^10.3.0",
+        "prettier": "^2.1.1",
+        "stylelint": "^13.7.0",
+        "stylelint-config-standard": "^20.0.0"
+    },
+    "lint-staged": {
+        "/*.html": [
+            "prettier .prettierrc.js --write"
+        ],
+        "{src,test}/**/*.{js,jsx,ts,tsx,json,css,less}": [
+            "prettier .prettierrc.js --write"
+        ],
+        "{src,test}/**/*.{js,jsx,ts,tsx}": [
+            "eslint --fix"
+        ],
+        "src/**/*.{css,less}": [
+            "stylelint --fix"
+        ]
     },
     "husky": {
         "hooks": {
-            "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+            "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
+            "pre-commit": "lint-staged"
         }
     },
     "config": {
