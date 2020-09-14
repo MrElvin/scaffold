@@ -2,7 +2,7 @@
 
 - tsconfig
 - jest
-- prettier
+- prettier (in vscode: format document with prettier ✅)
 - eslint lint
 - commit lint
 - style lint

@@ -14,6 +14,7 @@ module.exports = {
     },
     plugins: [
         '@typescript-eslint',
+        'html',
     ],
     rules: {
         indent: [1, 4],
