@@ -7,7 +7,12 @@
         "scaffold"
     ],
     "scripts": {
-        "commit": "git-cz"
+        "commit": "git-cz",
+        "ts-check": "tsc --noEmit",
+        "prettier:script": "prettier --write '{src,test}/**/*.{js,jsx,ts,tsx,json,css,less}'",
+        "prettier:doc": "prettier --write '*.html'",
+        "eslint": "eslint '{src,test}/**/*.{js,jsx,ts,tsx}'",
+        "stylelint": "stylelint 'src/**/*.{css,less}'"
     },
     "repository": {
         "type": "git",
@@ -33,7 +38,8 @@
         "lint-staged": "^10.3.0",
         "prettier": "^2.1.1",
         "stylelint": "^13.7.0",
-        "stylelint-config-standard": "^20.0.0"
+        "stylelint-config-standard": "^20.0.0",
+        "ts-node": "^9.0.0"
     },
     "lint-staged": {
         "*.html": [

@@ -18,5 +18,15 @@ module.exports = {
     ],
     rules: {
         indent: [1, 4],
+        'no-console': 'off',
+        'import/no-anonymous-default-export': ['error', {
+            allowArrowFunction: true,
+            allowAnonymousClass: true,
+            allowAnonymousFunction: true,
+            allowLiteral: true,
+            allowObject: false,
+            allowArray: true,
+        }],
+
     },
 };
