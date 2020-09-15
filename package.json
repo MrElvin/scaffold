@@ -12,7 +12,8 @@
         "prettier:script": "prettier --write '{src,test}/**/*.{js,jsx,ts,tsx,json,css,less}'",
         "prettier:doc": "prettier --write '*.html'",
         "eslint": "eslint '{src,test}/**/*.{js,jsx,ts,tsx}'",
-        "stylelint": "stylelint 'src/**/*.{css,less}'"
+        "stylelint": "stylelint 'src/**/*.{css,less}'",
+        "release": "standard-version"
     },
     "repository": {
         "type": "git",
@@ -37,6 +38,7 @@
         "husky": "^4.3.0",
         "lint-staged": "^10.3.0",
         "prettier": "^2.1.1",
+        "standard-version": "^9.0.0",
         "stylelint": "^13.7.0",
         "stylelint-config-standard": "^20.0.0",
         "ts-node": "^9.0.0"
